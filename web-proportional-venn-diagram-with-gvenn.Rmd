@@ -94,7 +94,7 @@ Creating a Venn diagram with `gVenn` is incredibly simple:
 
 The magic of `gVenn` is that the **areas are proportional** to the actual overlap sizes. In traditional Venn diagrams, circles often have fixed sizes, but here the areas are adjusted to size each region to reflect the true numbers!
 
-```{r, fig.align="center"}
+```{r default-Venn, fig.align="center"}
 # 1. Compute overlaps
 overlap <- computeOverlaps(gene_list)
 
@@ -256,7 +256,7 @@ The `legend` parameter accepts:
 
 Here's a complete example with all customizations for a publication-ready figure:
 
-```{r publication-ready, fig.height=6, fig.width=8}
+```{r multiple-custom-options, fig.height=6, fig.width=8}
 plotVenn(overlap,
          # Custom colors with transparency
          fills = list(fill = c("#2B70AB", "#FFB027", "#3EA742"), 
